@@ -11,7 +11,7 @@
 
 <body>
     <h1>Html Quiz</h1>
-    <form>
+    <form name="quiz">
         <div class="question-1">
             <p>Q1. Which tag is used to mark a paragragh in Html?</p>
             <label>
@@ -31,10 +31,11 @@
                 <input type="radio" name="Q2" id="Q2-home-tool" value="home-tool"> Home tool markup Language
             </label>
             <label>
-                <input type="radio" name="Q2" id="Q2-hyper-text" value="hyper-text" > Hypertext Markup Language
+                <input type="radio" name="Q2" id="Q2-hyper-text" value="hyper-text"> Hypertext Markup Language
             </label>
             <label>
-                <input type="radio" name="Q2" id="Q2-hyper-links" value="hyper-links"> Hyperlinks and Text Markup Language
+                <input type="radio" name="Q2" id="Q2-hyper-links" value="hyper-links"> Hyperlinks and Text Markup
+                Language
             </label>
         </div>
         <div class="question-3">
@@ -74,10 +75,11 @@
                 <input type="radio" name="Q5" value="break" id="break">break
             </label>
         </div>
-        <button>Submit</button>
-       <h3>You scored <span></span> out of 5</h3> 
+        <button onclick="submitQuiz()">Submit</button>
+        <h3>You scored <span></span> out of 5</h3>
     </form>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
