@@ -9,15 +9,28 @@ function submitQuiz() {
 
     //validation
 
-    for(i = 1; i <= total; i++){
-        if(q + i == ""){
-            alert("You have missed question + " i)s;
+    for (i = 1; i <= total; i++) {
+        if (eval('q' + i) == "") {
+            alert('You missesd Question' + " " + i);
             return false;
         }
-    
+
     }
 
-    
+    // Correct Answers
+    let answers = ["p", "hyper-text", "mozilla", "h1", "br"];
+
+    // Check Answers
+    for(i = 1; i <= total; i++){
+       for(j = 0; j < total; j++){
+        if(eval('q'+ i ) == answers[j]){
+            score++;
+        }
+       }
+    }
+
+alert(' you scored ' + score + ' out of ' + total);
 
 }
-
+let result = document.querySelector(" h3 span").innerHTML;
+result = score;
