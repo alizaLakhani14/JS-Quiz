@@ -32,5 +32,3 @@ function submitQuiz() {
 alert(' you scored ' + score + ' out of ' + total);
 
 }
-let result = document.querySelector(" h3 span").innerHTML;
-result = score;
