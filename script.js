@@ -21,14 +21,14 @@ function submitQuiz() {
     let answers = ["p", "hyper-text", "mozilla", "h1", "br"];
 
     // Check Answers
-    for(i = 1; i <= total; i++){
-       for(j = 0; j < total; j++){
-        if(eval('q'+ i ) == answers[j]){
-            score++;
+    for (i = 1; i <= total; i++) {
+        for (j = 0; j < total; j++) {
+            if (eval('q' + i) == answers[j]) {
+                score++;
+            }
         }
-       }
     }
 
-alert(' you scored ' + score + ' out of ' + total);
+    alert(' you scored ' + score + ' out of ' + total);
 
 }
